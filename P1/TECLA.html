@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECLADO</title>
+</head>
+<body>
+    <h1>Presiona una tecla</h1>
+    <p id="resultado"></p>
+    <script>
+        const resultado = document.getElementById("resultado");
+        document.addEventListener("keydown", (evento) => {
+            console.log("Tecla:", evento.key); 
+            alert("Tecla presionada!");
+            resultado.textContent = "Presionaste: " + evento.key;
+        });
+    </script>
+</body>
+</html>

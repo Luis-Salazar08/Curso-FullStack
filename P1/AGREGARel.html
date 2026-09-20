@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGREGAR ELEMENTO</title>
+</head>
+<body>
+    <ul id="lista"></ul>
+    <button id="btnAgregar">Agregar elemento</button>
+    <script>
+        const lista = document.getElementById("lista");
+        const botonAgregar = document.getElementById("btnAgregar");
+        botonAgregar.addEventListener("click", () => {
+            const li = document.createElement("li");
+            li.textContent = "JavaScript";
+            lista.appendChild(li);
+        });
+    </script>
+</body>
+</html>
