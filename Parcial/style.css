@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1d4ed8;
+    color: white;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 26px;
+}
+
+nav {
+    display: flex;
+    gap: 24px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #bfdbfe;
+}
+
+#inicio {
+    text-align: center;
+    padding: 55px 20px 35px;
+}
+
+#inicio h2 {
+    color: #1d4ed8;
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+#inicio p {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #64748b;
+}
+
+#contacto {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto 50px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+#contacto h2 {
+    text-align: center;
+    color: #1d4ed8;
+    margin-bottom: 24px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font: inherit;
+    background-color: #fff;
+    outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    margin-top: 12px;
+    padding: 13px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #1e40af;
+}
+
+button:disabled {
+    background-color: #94a3b8;
+    cursor: not-allowed;
+}
+
+#estado {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #e2e8f0;
+    color: #64748b;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 16px 5%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #inicio h2 {
+        font-size: 26px;
+    }
+
+    #contacto {
+        padding: 22px;
+    }
+}
